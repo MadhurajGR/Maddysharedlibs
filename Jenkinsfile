@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("maven build"){
             steps{
-                sh 'mvn clean package -DskipTests=true'
+              sh 'mvn clean package -DskipTests=true'
             }
         }
         stage(" Dev Tomcat Deploy"){
